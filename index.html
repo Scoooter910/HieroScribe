@@ -1,53 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HieroScribe</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #1a1a1a, #333);
-      color: white;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-    }
-    p {
-      font-size: 1.5em;
-      margin-bottom: 2em;
-    }
-    audio {
-      display: none; /* Hides audio controls */
-    }
-  </style>
-</head>
-<body>
-  <h1>Welcome to HieroScribe</h1>
-  <p>A nostalgic social space inspired by the golden days of the internet.</p>
-
-  <audio id="backgroundAudio" autoplay loop>
-    <source src="https://github.com/Scoooter910/HieroScribe/raw/refs/heads/main/mystic-elegy-258703%20(4).mp3">
-    Your browser does not support the audio element.
-  </audio>
-
-  <script>
-    // Try to force audio playback
-    window.addEventListener('load', () => {
-      const audio = document.getElementById('backgroundAudio');
-      const playPromise = audio.play();
-
-      if (playPromise !== undefined) {
-        playPromise.then(() => {
-          console.log("Audio started playing.");
-        }).catch(error => {
-          console.warn("Autoplay prevented. User may need to interact first.", error);
-        });
-      }
-    });
-  </script>
-</body>
-</html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>HieroScribe</title>
+   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans&display=swap" rel="stylesheet">
+   <style>
+     * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+     body {
+       font-family: 'Open Sans', sans-serif;
+       background: linear-gradient(to bottom, #1e1e1e, #2c2c2c);
+       color: #f4f4f4;
+       display: flex;
+       flex-direction: column;
+       min-height: 100vh;
+     }
+     header {
+       background-color: #111;
+       padding: 2rem;
+       text-align: center;
+       border-bottom: 2px solid #444;
+     }
+     header h1 {
+       font-family: 'Julius Sans One', sans-serif;
+       font-size: 3rem;
+       letter-spacing: 2px;
+       color: #ffd369;
+     }
+     header p {
+       font-size: 1.2rem;
+       color: #ccc;
+       margin-top: 0.5rem;
+     }
+     main {
+       flex: 1;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       padding: 3rem;
+     }
+     section {
+       max-width: 600px;
+     }
+     section h2 {
+       font-size: 2rem;
+       color: #ffd369;
+       margin-bottom: 1rem;
+     }
+     section p {
+       font-size: 1.1rem;
+       color: #e0e0e0;
+     }
+     footer {
+       text-align: center;
+       padding: 1rem;
+       background-color: #111;
+       color: #666;
+       border-top: 1px solid #333;
+     }
+   </style>
+ </head>
+ <body>
+   <header>
+     <h1>HieroScribe</h1>
+     <p>Write Your Legacy. Share Your World.</p>
+   </header>
+ 
+   <main>
+     <section>
+       <h2>Coming Soon</h2>
+       <p>A new kind of social experience, where every post is a scroll in your digital pyramid.<br /></p>
+     </section>
+   </main>
+ 
+   <footer>
+     <p>© 2025 HieroScribe. All rights reserved.</p>
+   </footer>
+ </body>
+ </html>
