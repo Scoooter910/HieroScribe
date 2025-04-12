@@ -1,0 +1,19 @@
+# macOS system files
+.DS_Store
+
+# Log files
+*.log
+
+# Node modules (if using npm later)
+node_modules/
+
+# Build folders
+dist/
+build/
+
+# VSCode settings (optional)
+.vscode/
+
+# Temp files
+*.tmp
+*.swp
