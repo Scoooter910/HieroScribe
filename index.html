@@ -56,11 +56,8 @@
 
   <div class="coming-soon">🚧 Coming Soon 🚧</div>
 
-  <!-- Button to start audio -->
-  <button id="playButton">Play Music</button>
-
-  <!-- Audio Player -->
-  <audio id="backgroundAudio" loop>
+  <!-- Auto-Play Audio Player -->
+  <audio id="backgroundAudio" autoplay loop>
     <source src="https://raw.githubusercontent.com/Scoooter910/HieroScribe/main/mystic-elegy-258703.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
@@ -69,12 +66,5 @@
     &copy; 2025 HieroScribe. All rights reserved.
   </footer>
 
-  <script>
-    // JavaScript to play audio when button is clicked
-    document.getElementById('playButton').addEventListener('click', function() {
-      var audio = document.getElementById('backgroundAudio');
-      audio.play();
-    });
-  </script>
 </body>
 </html>
